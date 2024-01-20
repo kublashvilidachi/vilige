@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Village</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Story Village</h1>
+        <nav>
+            <ul>
+                <li><a href="d.html" onclick="loadPage('index')">Home</a></li>
+                <li><a href="story.html" onclick="loadPage('story')">Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- Content will be loaded here dynamically -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Story Village. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Initial content
+        document.getElementById('content').innerHTML = `
+            <section id="banner">
+                <div id="storyText">
+                    Once upon a time, in a small village nestled between rolling hills and dense forests, there lived a young villager named Gamoklevebuli... He grew up in a humble family, struggling to make ends meet in their modest home. Despite the hardships, Gamoklevebuli cherished the simple joys of village life.
+
+One fateful day, the tranquility of the village was shattered when two ominous figures arrived. Dressed in dark cloaks, they brought with them an air of malice that struck fear into the hearts of the villagers. Without warning, the strangers set fire to the homes, sending plumes of smoke into the sky. Panic spread like wildfire, and in the chaos, the villagers, including Gamoklevebuli, were rounded up and taken captive.
+
+The captors led the villagers to a crude structure built with gravel, where they were confined. Gamoklevebuli found himself in a dimly lit room, its cold walls a stark contrast to the warmth of his village home. The lack of beds forced the captives to huddle together on the hard ground, their dreams of freedom seemingly crushed.
+
+Days turned into weeks, and weeks into months. Gamoklevebuli endured the harsh conditions, his spirit refusing to be broken. Sleep became a luxury, and hunger gnawed at their weakened bodies. In the midst of their suffering, Gamoklevebuli discovered an unexpected skill – he had a knack for writing. With bits of charcoal, he etched words and stories onto the walls of their gravel prison, offering a glimmer of solace to his fellow captives.
+
+One day, the captors recognized Gamoklevebuli's talent and forced him into servitude as a scribe for their nefarious operations. He became a reluctant employee of the villainous group, tasked with documenting their exploits and spreading propaganda among the villages they raided.
+
+As Gamoklevebuli toiled away, he dreamed of escape and yearned for the day when he could return to his village. However, fate had other plans. One day, during a failed uprising by the captives, a hail of arrows rained down upon them. In the chaos, Gamoklevebuli, struck by a cruel twist of destiny, fell victim to one of the deadly projectiles.
+
+His life ended in that gravel-walled prison, his dreams of freedom and reunion with his family shattered. The villagers, once full of life and hope, now mourned the loss of Gamoklevebuli, the young scribe who had endured the darkest of times. The echoes of his story lingered in the whispers of the wind, a somber reminder of the fragility of life in a world marked by cruelty and injustice.
+                </div>
+            </section>
+        `;
+    </script>
+</body>
+</html>
